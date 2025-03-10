@@ -1,5 +1,5 @@
 {% set name = "ibmcloudant" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ibmcloudant-{{ version }}.tar.gz
-  sha256: d6d3963ebb9b7963ea9ab5a586a73e3e70ca6e68f916b2de0f3b061e46be6e52
+  sha256: 65e51ce000727c159b26a78cb8d6476106286f1c06af1376c72f10e0954b36b6
 
 build:
   noarch: python
