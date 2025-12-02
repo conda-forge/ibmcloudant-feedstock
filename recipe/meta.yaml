@@ -1,5 +1,5 @@
 {% set name = "ibmcloudant" %}
-{% set version = "0.11.1" %}
+{% set version = "0.11.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ibmcloudant-{{ version }}.tar.gz
-  sha256: 0384b68357abb0d75d98098bf9c129b91bc8a4a2e947d106a173c0503abb5251
+  sha256: 43cd780ac3b0e7c03be016a97aa96809a5551e78d92f22c7c5913375da93353b
 
 build:
   noarch: python
@@ -20,6 +20,8 @@ requirements:
     - flit-core >=3.9,<4
     - pip
   run:
+    - ibm_cloud_sdk_core ==3.24.2
+    - python_dateutil >=2.5.3,<3.0.0
     - python >={{ python_min }}
     - ibm-cloud-sdk-core ==3.24.2
     - requests >=2.32.4,<3.0.0
