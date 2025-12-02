@@ -20,8 +20,6 @@ requirements:
     - flit-core >=3.9,<4
     - pip
   run:
-    - ibm_cloud_sdk_core ==3.24.2
-    - python_dateutil >=2.5.3,<3.0.0
     - python >={{ python_min }}
     - ibm-cloud-sdk-core ==3.24.2
     - requests >=2.32.4,<3.0.0
