@@ -34,12 +34,7 @@ tests:
       imports:
         - ibmcloudant
       python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - python ${{ python_min }}.*
-        - pip
-    script:
-      - pip check
+      pip_check: true
 
 about:
   summary: Python client library for IBM Cloudant
