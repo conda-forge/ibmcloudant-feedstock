@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ibmcloudant
-  version: "0.11.5"
+  version: "0.11.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ibmcloudant-${{ version }}.tar.gz
-  sha256: 8f17b84e2c8d14c4e126c7ca7785f614f3d22552dc8f3838d9f80d0e672bb559
+  sha256: 8cf4179785351c1c0a84ff53b35c4ff09688987dd3a5a2900b9af99946b96ce5
 
 build:
   number: 0
