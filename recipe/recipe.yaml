@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - flit-core >=3.9,<4
+    - flit-core >=4.0.2,<5
     - pip
   run:
     - python >=${{ python_min }}
@@ -32,7 +32,9 @@ tests:
   - python:
       imports:
         - ibmcloudant
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       pip_check: true
 
 about:
