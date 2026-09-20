@@ -20,8 +20,8 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - flit-core >=4.0.2,<5
     - pip
+    - flit-core >=4.0.2,<5
   run:
     - python >=${{ python_min }}
     - ibm-cloud-sdk-core ==3.26.1
