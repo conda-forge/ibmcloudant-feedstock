@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ibmcloudant
-  version: 0.11.11
+  version: 0.11.12
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ibmcloudant-${{ version }}.tar.gz
-  sha256: 5c293a7fcd708be1f7bd525a30ab5fa11eac21d7388fd19021645cfbb16a01e0
+  sha256: 5c99ce35958d181c97bdb7dae7ba2f87174bb82746f016cec1d2851aa693e7a0
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - flit-core >=4.0.2,<5
   run:
     - python >=${{ python_min }}
-    - ibm-cloud-sdk-core ==3.26.1
+    - ibm-cloud-sdk-core ==3.28.0
     - requests >=2.32.4,<3.0.0
     - python-dateutil >=2.5.3,<3.0.0
     - pyjwt >=2.0.1,<3.0.0
