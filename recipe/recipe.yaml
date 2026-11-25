@@ -24,7 +24,7 @@ requirements:
     - flit-core >=4.0.2,<5
   run:
     - python >=${{ python_min }}
-    - ibm-cloud-sdk-core ==3.28.1
+    - ibm-cloud-sdk-core ==3.28.2
     - requests >=2.32.4,<3.0.0
 tests:
   - python:
